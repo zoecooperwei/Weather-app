@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<!-- skycons src -->
+	<script src="https://gitcdn.link/cdn/darkskyapp/skycons/master/skycons.js"></script>
+	<!-- jquery src -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- script src -->
+	<script src="weather.js"></script>
+	<!-- fonts src -->
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Inconsolata:400,700" rel="stylesheet">
+	 <!-- css src -->
+	<link rel="stylesheet" href="style.css">
+	<!-- font-family src -->
+	<link href="https://fonts.googleapis.com/css?family=Markazi+Text:400,500,600" rel="stylesheet">
+	<!-- icon src -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather app</title>
+	<meta charset="utf-8" />
+</head>
+
+<body>
+<div class="wrap clearfix">
+	<!-- title display -->
+	<header>
+		<h1>Weather Forecast</h1>
+	</header>
+	<!-- time display -->
+	<div class="time"></div>
+	<!-- searchbox -->
+	<div class="searchBox">
+		<input type="text" id="cityName" placeholder="City name...">
+		<button id="search_button" ><i class="fas fa-search"></i></button>
+	</div>
+	<!-- notice -->
+	<div class="notice"></div>
+	<!-- basic weather information -->
+	<div class="city_info">
+		<div id="weather_info">
+			<canvas id="icon1" width="100" height="100"></canvas>
+			<div id="weather_temp"></div>
+			<div id="weather_condition"></div>
+			<div id="city_location"></div>
+		</div>
+		<!-- city location -->
+		<div id="map"></div>
+	</div>	
+</div>
+
+<!-- specific weather information -->
+<div class="other_info">
+	<table id="table">
+		<caption id="table_header">Current info</caption>
+		<tr>
+			<td>Wind</td>
+			<td id="wind_speed"></td>
+		</tr>
+		<tr>
+			<td>Pressure</td>
+			<td id="pressure"></td>
+		</tr>
+		<tr>
+			<td>Temperature</td>
+			<td id="temp_range"></td>
+		</tr>
+		<tr>
+			<td>Cloudiness</td>
+			<td id="cloudiness"></td>
+		</tr>
+		<tr>
+			<td>Humidity</td>
+			<td id="humidity"></td>
+		</tr>
+		<tr>
+			<td>Visibility</td>
+			<td id="visibility"></td>
+		</tr>
+	</table>
+</div>
+<!-- footer -->
+<footer>Designed and Coded by <span>CHEN WEI</span></footer>
+
+</body>
+
+</html>
