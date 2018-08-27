@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	background: url("img/cloud_day.jpg");
+	/*background: no-repeat;*/
+	background-size: cover;
+	min-width: 700px;
+	font-family: 'Inconsolata', monospace;
+	transition: background 10s linear;
+}
+
+h1, .time, #weather_condition, footer, .notice, #weather_temp, #city_location, .other_info{
+	color: #fff;
+}
+
+header{
+	padding: 50px;
+	margin: 0;
+	height: 200px;
+	/*min-width: 700px;*/
+}
+
+header h1{
+	margin: 0;
+	padding: 30px;
+	font-size: 60px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.notice{
+	font-size: 15px;
+	font-family: 'Inconsolata', monospace;
+}
+
+.city_info{
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+	border: 0;
+	height: 300px;
+	font-size: 20px;
+	font-family: 'Inconsolata', monospace;
+}
+
+#weather_info{
+	width: 50%;
+	float: left;
+	padding: 20px 10px 20px 10px;
+}
+
+.time, #weather_condition, #weather_temp, #city_location{
+	font-size: 20px;
+	padding: 5px;
+	font-family: 'Inconsolata', monospace;
+}
+
+#map{
+	width: 50%;
+	float: right;
+	padding: 10px 20px 10px 0px;
+}
+
+.searchBox{
+	margin: 0;
+	height: 100px;
+	padding: 30px;
+}
+
+#cityName{
+	font-size: 15px;
+	/*font-weight: bold;*/
+	letter-spacing: 0.05pc;
+	color: #fff;
+	width: 200px;
+	height: 30px;	
+	padding: 0;
+	margin: 0;
+	/*border-box: 1px;*/
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid white;
+	/*border-radius: 5px 5px 5px 5px;*/
+	background-color: transparent;
+	transition: 1s;
+	transition-timing-function: ease-in-out;
+}
+
+#search_button{
+	transition: 1s;
+	transition-timing-function: ease-in-out;
+}
+
+#cityName:hover{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+#search_button:hover{
+	color: rgba(255, 255, 255, 0.7);
+}
+
+::placeholder{
+	padding: 2px;
+	color: #fff;
+	opacity: 0.4;
+}
+
+#search_button .fas{
+	font-size: 20px;
+}
+
+#search_button{
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+	color: #fff;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+#search_button:focus, #cityName:focus{
+	outline: none;
+}
+
+.clearfix:after{
+	content: "";
+    display: table;
+    clear: both;
+}
+
+.other_info{
+	margin: auto;
+}
+
+#table{
+	margin: auto;
+	padding: 20px;
+	border-collapse: collapse; 
+}
+
+#table caption{
+	padding: 15px 5px 15px 5px;
+	font-size: 20px;
+} 
+
+#table td{
+	padding: 10px;
+	font-size: 18px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+#table_header{
+	padding: 2px;
+}
+
+footer{
+	margin: 0;
+	border: 0;
+	font-size: 16px;
+	clear: both;
+	padding: 40px;
+}
+
+span{
+	text-decoration: underline;
+	color: #4554a9;
+}
