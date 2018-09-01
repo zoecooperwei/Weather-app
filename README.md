@@ -6,6 +6,7 @@ A single web page app for weather, local time and location display.
 - Automatic location detection.
 - Adding custom city via searching by name.
 
+
 APIs used:
 OpenWeatherMap, Google Static Map Maker, World Weather Online, TimeZoneDB.
 
