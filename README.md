@@ -10,5 +10,5 @@ A single web page app for weather, local time and location display.
 OpenWeatherMap, Google Static Map Maker, World Weather Online, TimeZoneDB.
 
 ---
-![Weather]()
+![Weather](https://github.com/zoecooperwei/My-Blog-Design/blob/master/img/Weather.jpg)
 
